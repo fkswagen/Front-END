@@ -1,0 +1,234 @@
+:root {
+  --bg: #fff;
+  --ink: #111;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  --radius: 12px;
+  --sidenav-w: 280px;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+/* || Header */
+.header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.header__inner {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 20px;
+}
+.header__title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+.header__create {
+  margin-left: auto;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+
+}
+/*---------------------------------LAB2---------------------------------------------------------------------------------------*/
+.header__menu{
+  background: var(--bg);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 0px;
+}
+
+.header__create {
+  background:  var(--ink);
+  color: var(--bg);
+  border-radius: var(--radius);
+  width: 250px;
+}
+
+/*---------------------------------LAB2---------------------------------------------------------------------------------------*/
+
+
+/* || Side nav */
+.sidenav {
+  float:left;
+  width: var(--sidenav-w);
+  margin-right: 20px;
+  background: var(--bg);
+  border-right: 1px solid var(--line);
+  padding: 18px;
+  box-shadow: var(--shadow);
+
+}
+.sidenav__title {
+  margin: 4px 0 12px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.sidenav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidenav__item + .sidenav__item {
+  margin-top: 8px;
+}
+
+.sidenav__link {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.sidenav__link:hover {
+  background: #fafafa;
+}
+.sidenav__icon {
+  width: 24px;
+  text-align: center;
+}
+.sidenav__label {
+  display: block;
+}
+.sidenav__desc {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/*---------------------------------LAB2---------------------------------------------------------------------------------------*/
+.sidenav{
+  width: var(--sidenav-w);
+  border-radius: var(--radius);
+  
+}
+
+.sidenav__title{
+  padding-bottom: 5%;
+  border-bottom: 1px solid var(--line);
+}
+
+.sidenav__label{
+  border: 2px;
+  margin-bottom: 5px;
+}
+
+/*---------------------------------LAB2---------------------------------------------------------------------------------------*/
+
+/* || Main  */
+
+/* Main area pushed right of the sidebar */
+.main {
+  margin-left: var(--sidenav-w);
+  padding: 20px;
+}
+
+.invoice {
+  max-width: 940px;
+  margin: 0 auto;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 0; /* sections handle own padding */
+  overflow: hidden;
+}
+
+/* Invoice header (title/date/pay) */
+.invoice-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+.invoice-header__title {
+  margin: 0;
+  font-size: 1.75rem;
+}
+.invoice-header__date {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.invoice-header__pay {
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+}
+
+/* Billing details (To / From) */
+.billing {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+.billing__label {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.billing__address {
+  font-style: normal;
+  color: #374151;
+}
+.billing__name {
+  font-weight: 800;
+  color: #111;
+}
+
+/* Line items table */
+.lineitems__table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+.lineitems__head th {
+  text-align: left;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: #6b7280;
+  padding: 14px 24px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.lineitems__body td {
+  padding: 14px 24px;
+  border-bottom: 1px solid var(--line);
+}
+.lineitems__foot td {
+  padding: 18px 24px;
+  color: #6b7280;
+  border-top: 1px solid var(--line);
+}
+
+.lineitems__grandval {
+  color: #111;
+}
+.lineitems__grandval small {
+  display: block;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* ||  Site footer */
+.site-footer {
+  background-color: #fff;
+  color: #0a0a0a;
+  text-align: center;
+  padding: 14px;
+  margin-top: 28px;
+}
+.site-footer__text {
+  margin: 0;
+}
