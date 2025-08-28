@@ -1,3 +1,14 @@
+<!--
+AI Declaration:
+No Generative AI tools were used for this lab.  
+All code was written manually by the student.
+
+Reflection:
+[ Today’s lab helped me understand how to use media queries for responsive design. I practiced aligning content and adjusting spacing so layouts look consistent on mobile and desktop.
+]
+-->
+
+
 .invoice-app {
   max-width: 420px;
   margin: auto;
