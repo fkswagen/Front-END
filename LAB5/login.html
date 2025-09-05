@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+       <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+    <header>
+       
+       
+        <h1 class="w-full inline-flex justify-center bg-[url(/assets/bg2.png)] w-full p-20 text-6xl font-bold ">
+            Financial Management System
+        </h1>
+    </header>
+    <main class=" w-full inline-flex justify-center ">
+        <section>
+            <!-- Banner -->
+            <div class="p-10 w-full justify-center inline-flex flex-col items-center">
+                <img src="/assets/logo.png" alt="Logo" style="width: 70px;" class="inline-flex justify-center w-full m-2 " />
+                <h2 class="text-3xl font-bold " >
+                    Sign in to your account
+                </h2>
+            </div>
+            <!-- Login Form -->
+            <div >
+                <form action="/html/index.html" method="GET">
+                    <div>
+                        <label class="font-bold "for="email">Email address</label>
+                        <div >
+                            <input id="email" type="email" required autocomplete="email" class= "w-full p-2 focus:ring-2 focus:border-sky-700 bg-gray-200 rounded-md mb-5" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="inline-flex  w-full justify-between ">
+                            <label class = "font-bold mb-3"for="password">Password</label>
+                            <div class="text-blue-900 font-bold">
+                                <a href="#">Forgot password?</a>
+                            </div>
+                        </div>
+                        <div>
+                            <input id="password" type="password" required autocomplete="current-password" class= "w-full p-2 focus:ring-2 focus:border-sky-700 bg-gray-200 rounded-md mb-5"/>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-600 w-full p-2 rounded-md flex justify-center mb-3">
+                        <button type="submit" class="text-white ">
+                            Sign in
+                        </button>
+                    </div>
+                </form>
+
+                <p class=" flex justify-center text-gray-500">
+                    Not a member?
+                    <a href="#" class="text-blue-900 font-bold">Start a 14 day free trial</a>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
